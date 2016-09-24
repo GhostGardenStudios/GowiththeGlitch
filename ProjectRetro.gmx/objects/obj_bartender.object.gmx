@@ -139,7 +139,7 @@ text[2] = "Took so long the milk went back into the cow.";
 text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 
 // Set alarm to create milkshake
-    if (!haveTalked)
+    if (!barTalked)
     {
         alarm[0] = 400;
         show_debug_message("alarm was set");
