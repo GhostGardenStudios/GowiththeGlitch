@@ -42,9 +42,9 @@
       <object>objects\obj_parent</object>
       <object>objects\obj_dialog</object>
       <object>objects\obj_poof1</object>
+      <object>objects\obj_coinvar</object>
     </objects>
     <objects name="lifeforms">
-      <object>objects\obj_testlife</object>
       <object>objects\obj_bartender</object>
     </objects>
     <objects name="diner">
