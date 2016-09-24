@@ -21,8 +21,17 @@
     <sprites name="lifeforms">
       <sprite>sprites\spr_bartender</sprite>
     </sprites>
-    <sprites name="arcade 1">
+    <sprites name="diner">
+      <sprite>sprites\spr_milkshake</sprite>
       <sprite>sprites\spr_arcade1</sprite>
+    </sprites>
+    <sprites name="arcade 1">
+      <sprite>sprites\spr_arcade1bg</sprite>
+      <sprite>sprites\spr_harambe</sprite>
+      <sprite>sprites\spr_ladder1</sprite>
+      <sprite>sprites\spr_ladder2</sprite>
+      <sprite>sprites\spr_facebarrel</sprite>
+      <sprite>sprites\spr_barrel</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -49,6 +58,7 @@
     </objects>
     <objects name="diner">
       <object>objects\obj_arcade1</object>
+      <object>objects\obj_milkshake</object>
     </objects>
     <objects name="arcade 1">
       <object>objects\obj_coin1</object>

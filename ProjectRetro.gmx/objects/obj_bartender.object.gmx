@@ -29,7 +29,7 @@
 
 dialog = noone;
 dialog_page = 0;
-xoffset = 68;
+xoffset = -70;
 yoffset = -98;
 </string>
           </argument>
@@ -80,17 +80,6 @@ depth = phy_position_y * -1;
 
 scr_get_input();
 
-if (global.coin == 0) {
-show_debug_message("aaaa it's 0");
-} 
-
-else if (global.coin == 1) {
-show_debug_message("oops it's 1 now");
-}
-
-else if (global.coin == 2) {
-show_debug_message("how am i already 2");
-}
 
 if (space_key &amp;&amp; global.coin == 0) {
 /// 1st instance dialogue
@@ -103,7 +92,7 @@ text[3] = "Gotta have some cold hard coins on you.";
 else if (space_key &amp;&amp; global.coin == 2) {
 /// 2nd instance dialogue
 text[0] = "Boy! Want one of these sweet milkshakes, huh?";
-text[1] = "Seems you only have 25¢! You need 75¢!";
+text[1] = "Seems you only have 25 cents! You need 75 cents!";
 text[2] = "Check back when you've got enough money, son.";
 }
 
@@ -111,7 +100,7 @@ else if (space_key &amp;&amp; global.coin == 4) {
 /// 3rd instance dialogue
 text[0] = "Cravin a milkshake, my boy?";
 text[1] = "You're killin me, smalls!";
-text[2] = "You're at 50¢. Only need 25 more!";
+text[2] = "You're at 50 cents. Only need a quarter more!";
 text[3] = "From all that jingling in your pocket,";
 text[4] = "you sure can't count your change, son.";
 }
@@ -121,13 +110,35 @@ else if (space_key &amp;&amp; global.coin == 6) {
 text[0] = "Finally you got what I've been askin for.";
 text[1] = "I'm tellin you, the shake machine was rusting back here.";
 text[2] = "Took so long the milk went back into the cow.";
-text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
+text[3] = "Welp. Here ya go, son!"; 
+text[4] = "Congrats, you earned it I guess.";
 global.coin = global.coin+2;
-//// last click of dialogue - room_goto(rm_milkshake);
 }
 
-else if (space_key &amp;&amp; global.coin == 8) {
-room_goto(rm_milkshake);
+  if (space_key &amp;&amp; global.coin == 8) {
+    global.coin = global.coin+2;
+    }
+    
+    else if (space_key &amp;&amp; global.coin == 10) {
+    global.coin = global.coin+2;
+    }
+    
+    else if (space_key &amp;&amp; global.coin == 12) {
+    global.coin = global.coin+2;
+    }
+    
+    else if (space_key &amp;&amp; global.coin == 14) {
+    global.coin = global.coin+2;
+    }
+
+
+
+if (space_key &amp;&amp; global.coin == 16) {
+instance_create(obj_player.x, obj_player.y, obj_milkshake);
+} 
+
+if (global.coin == 16) {
+show_debug_message("ok it got to 8");
 }
 </string>
           </argument>
