@@ -14,9 +14,16 @@
     </sprites>
     <sprites name="helper">
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_test</sprite>
+      <sprite>sprites\spr_test2</sprite>
+      <sprite>sprites\spr_dialog</sprite>
     </sprites>
-    <sprite>sprites\spr_arcade1</sprite>
-    <sprite>sprites\spr_bartender</sprite>
+    <sprites name="lifeforms">
+      <sprite>sprites\spr_bartender</sprite>
+    </sprites>
+    <sprites name="arcade 1">
+      <sprite>sprites\spr_arcade1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,16 +31,23 @@
     <script>scripts\scr_move_state.gml</script>
     <script>scripts\scr_get_input.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ft_dialog</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <objects name="helper">
       <object>objects\obj_wall</object>
       <object>objects\obj_view</object>
       <object>objects\obj_parent</object>
+      <object>objects\obj_dialog</object>
       <object>objects\obj_poof1</object>
     </objects>
-    <objects name="diner">
+    <objects name="lifeforms">
+      <object>objects\obj_testlife</object>
       <object>objects\obj_bartender</object>
+    </objects>
+    <objects name="diner">
       <object>objects\obj_arcade1</object>
     </objects>
     <objects name="arcade 1">
@@ -47,8 +61,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_title</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_title</room>
+    <room>rooms\rm_void</room>
+    <room>rooms\rm_diner</room>
     <room>rooms\rm_arcade1</room>
     <room>rooms\rm_arcade2</room>
     <room>rooms\rm_arcade3</room>
