@@ -20,17 +20,18 @@
     </sprites>
     <sprites name="lifeforms">
       <sprite>sprites\spr_bartender</sprite>
+      <sprite>sprites\spr_harambe</sprite>
     </sprites>
     <sprites name="diner">
       <sprite>sprites\spr_milkshake</sprite>
       <sprite>sprites\spr_arcade1</sprite>
     </sprites>
     <sprites name="arcade 1">
-      <sprite>sprites\spr_arcade1bg</sprite>
-      <sprite>sprites\spr_harambe</sprite>
+      <sprite>sprites\spr_bg1</sprite>
       <sprite>sprites\spr_ladder1</sprite>
       <sprite>sprites\spr_ladder2</sprite>
-      <sprite>sprites\spr_facebarrel</sprite>
+      <sprite>sprites\spr_cutebarrel</sprite>
+      <sprite>sprites\spr_upbarrel</sprite>
       <sprite>sprites\spr_barrel</sprite>
     </sprites>
   </sprites>
@@ -52,9 +53,11 @@
       <object>objects\obj_dialog</object>
       <object>objects\obj_poof1</object>
       <object>objects\obj_coinvar</object>
+      <object>objects\spr_invisiblewall</object>
     </objects>
     <objects name="lifeforms">
       <object>objects\obj_bartender</object>
+      <object>objects\obj_harambe</object>
     </objects>
     <objects name="diner">
       <object>objects\obj_arcade1</object>
@@ -62,6 +65,12 @@
     </objects>
     <objects name="arcade 1">
       <object>objects\obj_coin1</object>
+      <object>objects\obj_bg1</object>
+      <object>objects\obj_ladder1</object>
+      <object>objects\obj_ladder2</object>
+      <object>objects\obj_cutebarrel</object>
+      <object>objects\obj_upbarrel</object>
+      <object>objects\obj_barrel</object>
     </objects>
     <objects name="arcade 2">
       <object>objects\obj_coin2</object>

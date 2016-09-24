@@ -31,6 +31,7 @@ dialog = noone;
 dialog_page = 0;
 xoffset = -70;
 yoffset = -98;
+barTalked = false;
 </string>
           </argument>
         </arguments>
@@ -59,6 +60,33 @@ depth = phy_position_y * -1;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Create milkshake
+
+instance_create(obj_player.x, obj_player.y, obj_milkshake);
+    
+    show_debug_message("alarm went off");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -76,17 +104,16 @@ depth = phy_position_y * -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Dialogue
+            <string>// Dialogue
 
 scr_get_input();
 
 
 if (space_key &amp;&amp; global.coin == 0) {
 /// 1st instance dialogue
-text[0] = "Boy! Want a milkshake don't you?";
-text[1] = "Sorry son! You don't seem to have enough money.";
-text[2] = "Milkshakes are 75¢.";
-text[3] = "Gotta have some cold hard coins on you.";
+text[0] = "Boy! Want a milkshake don't you?..... Sorry, son";
+text[1] = "Milkshakes are 75 cents, and I'm not seeing any money.";
+text[2] = "Gotta have some cold hard coins on ya.";
 }
 
 else if (space_key &amp;&amp; global.coin == 2) {
@@ -98,11 +125,10 @@ text[2] = "Check back when you've got enough money, son.";
 
 else if (space_key &amp;&amp; global.coin == 4) {
 /// 3rd instance dialogue
-text[0] = "Cravin a milkshake, my boy?";
-text[1] = "You're killin me, smalls!";
-text[2] = "You're at 50 cents. Only need a quarter more!";
-text[3] = "From all that jingling in your pocket,";
-text[4] = "you sure can't count your change, son.";
+text[0] = "Cravin a milkshake, my boy? You're killin me, smalls!";
+text[1] = "You're at 50 cents. Only need a quarter more!";
+text[2] = "From all that jingling in your pocket,"
+text[3] = "you sure can't count your change, son.";
 }
 
 else if (space_key &amp;&amp; global.coin == 6) {
@@ -110,36 +136,20 @@ else if (space_key &amp;&amp; global.coin == 6) {
 text[0] = "Finally you got what I've been askin for.";
 text[1] = "I'm tellin you, the shake machine was rusting back here.";
 text[2] = "Took so long the milk went back into the cow.";
-text[3] = "Welp. Here ya go, son!"; 
-text[4] = "Congrats, you earned it I guess.";
-global.coin = global.coin+2;
+text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
+
+// Set alarm to create milkshake
+    if (!haveTalked)
+    {
+        alarm[0] = 400;
+        show_debug_message("alarm was set");
+        barTalked = true;
+    }
 }
 
-  if (space_key &amp;&amp; global.coin == 8) {
-    global.coin = global.coin+2;
-    }
-    
-    else if (space_key &amp;&amp; global.coin == 10) {
-    global.coin = global.coin+2;
-    }
-    
-    else if (space_key &amp;&amp; global.coin == 12) {
-    global.coin = global.coin+2;
-    }
-    
-    else if (space_key &amp;&amp; global.coin == 14) {
-    global.coin = global.coin+2;
-    }
 
 
-
-if (space_key &amp;&amp; global.coin == 16) {
-instance_create(obj_player.x, obj_player.y, obj_milkshake);
-} 
-
-if (global.coin == 16) {
-show_debug_message("ok it got to 8");
-}
+  
 </string>
           </argument>
         </arguments>
