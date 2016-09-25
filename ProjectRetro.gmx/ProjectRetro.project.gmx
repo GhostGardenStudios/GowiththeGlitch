@@ -56,6 +56,7 @@
       <sprite>sprites\spr_harambe</sprite>
       <sprite>sprites\spr_score1</sprite>
       <sprite>sprites\spr_door1</sprite>
+      <sprite>sprites\spr_frame1</sprite>
     </sprites>
     <sprites name="arcade 2">
       <sprite>sprites\spr_bg2</sprite>
@@ -68,6 +69,7 @@
       <sprite>sprites\spr_ghost2</sprite>
       <sprite>sprites\spr_score2</sprite>
       <sprite>sprites\spr_door2</sprite>
+      <sprite>sprites\spr_frame2</sprite>
     </sprites>
     <sprites name="arcade 3">
       <sprite>sprites\spr_bg3</sprite>
@@ -79,9 +81,15 @@
       <sprite>sprites\spr_puddles</sprite>
       <sprite>sprites\spr_score3</sprite>
       <sprite>sprites\spr_door3</sprite>
+      <sprite>sprites\spr_frame3</sprite>
     </sprites>
     <sprites name="title and credits">
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_credits</sprite>
+    </sprites>
+    <sprites name="milkshake">
+      <sprite>sprites\spr_milkshakeget</sprite>
+      <sprite>sprites\spr_bigmilkshake</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -112,6 +120,7 @@
         <object>objects\obj_poofout</object>
         <object>objects\obj_milkpoof</object>
       </objects>
+      <object>objects\obj_parent</object>
       <object>objects\obj_title</object>
     </objects>
     <objects name="diner">
@@ -170,24 +179,31 @@
     </objects>
     <objects name="title and credits">
       <object>objects\obj_titleglitch</object>
+      <object>objects\obj_credits</object>
     </objects>
-    <object>objects\obj_parent</object>
-    <objects name="Music">
+    <objects name="music">
       <object>objects\obj_vaporwavesong</object>
       <object>objects\obj_froggersong</object>
       <object>objects\obj_harambesong</object>
       <object>objects\obj_pacmansong</object>
     </objects>
+    <objects name="milkshake">
+      <object>objects\obj_bigmilkshake</object>
+      <object>objects\obj_milkshakeleave</object>
+      <object>objects\obj_milkshakeget</object>
+    </objects>
+    <object>objects\obj_frame1</object>
+    <object>objects\obj_frame2</object>
+    <object>objects\obj_frame3</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_diner</room>
     <room>rooms\rm_arcade1</room>
     <room>rooms\rm_arcade2</room>
-    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_milkshake</room>
     <room>rooms\rm_credits</room>
-    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
