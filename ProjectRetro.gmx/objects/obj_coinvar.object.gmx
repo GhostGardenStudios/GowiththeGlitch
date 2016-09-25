@@ -34,6 +34,8 @@ global.coin1 = 0;
 global.coin2 = 0;
 
 global.coin3 = 0;
+
+global.barreltouch = 0;
 </string>
           </argument>
         </arguments>

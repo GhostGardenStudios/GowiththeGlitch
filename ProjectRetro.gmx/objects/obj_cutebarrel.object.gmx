@@ -32,6 +32,8 @@ dialog_page = 0;
 xoffset = -70;
 yoffset = -98;
 barrelTalked = false;
+
+
 </string>
           </argument>
         </arguments>
@@ -132,23 +134,50 @@ scr_get_input();
 
 
 if (space_key) {
-text[0] = "Penny for your thoughts?";
+text[0] = "Penny for your thoughts!";
 text[1] = "Does that big guy seem familiar to you?";
 text[2] = "..........Not much of a talker huh? Well here ya go anyway.";
 text[3] = "All's I've got is quarters, so I hope that suits your fancy.";
 
 // Set alarm to create milkshake
-    if (!barrelTalked)
+    if (!barrelTalked &amp;&amp; global.barreltouch &gt; 0) 
     {
         alarm[0] = 280;
         show_debug_message("alarm was set");
         barrelTalked = true;
-    }
+    } 
+    
 
 }
 
 
   
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Collide and create global variable barreltouch
+
+global.barreltouch = global.barreltouch+2;
+show_debug_message("we touchin");
 </string>
           </argument>
         </arguments>
@@ -167,9 +196,9 @@ text[3] = "All's I've got is quarters, so I hope that suits your fancy.";
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>3.25,35.5</point>
-    <point>43.5,35.5</point>
-    <point>43.5,50.25</point>
-    <point>3.25,50.25</point>
+    <point>5,35.75</point>
+    <point>46.5,35.75</point>
+    <point>46.5,58.5</point>
+    <point>5,58.5</point>
   </PhysicsShapePoints>
 </object>

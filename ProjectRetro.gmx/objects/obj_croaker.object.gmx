@@ -25,6 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Dialogue variables
+
+dialog = noone;
+dialog_page = 0;
+xoffset = -75;
+yoffset = -98;
+
+text[0] = "Don't be like me, kid. They call me croaker now.";
+text[1] = "Hoppin from job to job,";
+text[2] = "leaping across cars and rivers and all that mess...";
+text[3] = "..............";
+text[4] = "........... I want Sharon back.";
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// depth correction
 depth = phy_position_y * -1;
 
@@ -49,7 +81,7 @@ depth = phy_position_y * -1;
           <argument>
             <kind>1</kind>
             <string>/// frame rate
-image_speed = 0.05;
+image_speed = 0.09;
 </string>
           </argument>
         </arguments>

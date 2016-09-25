@@ -52,7 +52,7 @@ instance_create(random(room_width), random(room_height), obj_poofout);
   <PhysicsShapePoints>
     <point>0,0</point>
     <point>32,0</point>
-    <point>32,32</point>
-    <point>0,32</point>
+    <point>32,35</point>
+    <point>0,35</point>
   </PhysicsShapePoints>
 </object>

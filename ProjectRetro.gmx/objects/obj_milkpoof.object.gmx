@@ -77,7 +77,7 @@ instance_destroy();
             <kind>1</kind>
             <string>// Create smoke effect
 
-effect_create_above(ef_smoke, obj_milkpoof.x, obj_milkpoof.y, 0, c_ltgray);
+effect_create_above(ef_smoke, obj_milkshake.x, obj_milkshake.y, 0, c_ltgray);
 </string>
           </argument>
         </arguments>
