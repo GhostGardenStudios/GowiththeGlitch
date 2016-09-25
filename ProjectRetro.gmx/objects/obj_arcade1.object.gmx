@@ -52,6 +52,8 @@ depth = phy_position_y * -1;
             <kind>1</kind>
             <string>// Goes to next room
 
+scr_get_input();
+
 if (space_key) {
 instance_create(random(room_width), random(room_height), obj_poof1);
 }
@@ -73,9 +75,9 @@ instance_create(random(room_width), random(room_height), obj_poof1);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>10.75,12.75</point>
-    <point>40,12.75</point>
-    <point>40,90.25</point>
-    <point>10.75,90.25</point>
+    <point>12.5,75.5</point>
+    <point>57.25,75.5</point>
+    <point>57.25,90.25</point>
+    <point>12.5,90.25</point>
   </PhysicsShapePoints>
 </object>
