@@ -19,10 +19,22 @@
       <sprite>sprites\spr_dialog</sprite>
     </sprites>
     <sprites name="diner">
-      <sprite>sprites\spr_milkshake</sprite>
-      <sprite>sprites\spr_arcade1</sprite>
       <sprite>sprites\spr_coin</sprite>
       <sprite>sprites\spr_bartender</sprite>
+      <sprite>sprites\spr_milkshake</sprite>
+      <sprite>sprites\spr_arcade1</sprite>
+      <sprite>sprites\spr_arcade2</sprite>
+      <sprite>sprites\spr_arcade3</sprite>
+      <sprite>sprites\spr_opensign</sprite>
+      <sprite>sprites\spr_waitress2</sprite>
+      <sprite>sprites\spr_waitress1</sprite>
+      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\spr_shelf</sprite>
+      <sprite>sprites\spr_jukebox</sprite>
+      <sprite>sprites\spr_table1</sprite>
+      <sprite>sprites\spr_table2</sprite>
+      <sprite>sprites\spr_bar</sprite>
+      <sprite>sprites\spr_dinerwall</sprite>
     </sprites>
     <sprites name="arcade 1">
       <sprite>sprites\spr_bg1</sprite>
@@ -43,8 +55,19 @@
       <sprite>sprites\spr_ghost1</sprite>
       <sprite>sprites\spr_ghost2</sprite>
     </sprites>
+    <sprites name="arcade 3">
+      <sprite>sprites\spr_bg3</sprite>
+      <sprite>sprites\spr_croaker</sprite>
+      <sprite>sprites\spr_logs</sprite>
+      <sprite>sprites\spr_car</sprite>
+      <sprite>sprites\spr_tire</sprite>
+      <sprite>sprites\spr_sign</sprite>
+      <sprite>sprites\spr_puddles</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_tile</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_move_state.gml</script>
@@ -65,6 +88,18 @@
     </objects>
     <objects name="diner">
       <object>objects\obj_arcade1</object>
+      <object>objects\obj_arcade2</object>
+      <object>objects\obj_arcade3</object>
+      <object>objects\obj_jukebox</object>
+      <object>objects\obj_table1</object>
+      <object>objects\obj_table2</object>
+      <object>objects\obj_opensign</object>
+      <object>objects\obj_light</object>
+      <object>objects\obj_bar</object>
+      <object>objects\obj_shelf</object>
+      <object>objects\obj_waitress1</object>
+      <object>objects\obj_waitress2</object>
+      <object>objects\obj_dinerwall</object>
       <object>objects\obj_milkshake</object>
       <object>objects\obj_bartender</object>
     </objects>
@@ -91,17 +126,24 @@
     </objects>
     <objects name="arcade 3">
       <object>objects\obj_coin3</object>
+      <object>objects\obj_bg3</object>
+      <object>objects\obj_croaker</object>
+      <object>objects\obj_logs</object>
+      <object>objects\obj_car</object>
+      <object>objects\obj_tire</object>
+      <object>objects\obj_sign</object>
+      <object>objects\obj_puddles</object>
     </objects>
     <object>objects\obj_parent</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_arcade1</room>
+    <room>rooms\rm_diner</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_arcade2</room>
+    <room>rooms\rm_arcade1</room>
+    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_void</room>
-    <room>rooms\rm_diner</room>
-    <room>rooms\rm_arcade2</room>
-    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_milkshake</room>
   </rooms>
   <help>

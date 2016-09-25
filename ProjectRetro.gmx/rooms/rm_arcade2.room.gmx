@@ -66,6 +66,7 @@
     <instance objName="obj_ghost1" x="580" y="476" name="inst_292264A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ghost2" x="544" y="498" name="inst_6BCD47AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coin2" x="656" y="311" name="inst_BB786A05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="spr_invisiblewall" x="480" y="178" name="inst_96DCF880" locked="0" code="" scaleX="20.34375" scaleY="3.39000010490417" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
