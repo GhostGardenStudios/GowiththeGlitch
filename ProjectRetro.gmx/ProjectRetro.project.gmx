@@ -197,11 +197,11 @@
     <object>objects\obj_frame3</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_diner</room>
     <room>rooms\rm_arcade1</room>
     <room>rooms\rm_arcade2</room>
+    <room>rooms\rm_arcade3</room>
     <room>rooms\rm_milkshake</room>
     <room>rooms\rm_credits</room>
   </rooms>

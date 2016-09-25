@@ -134,7 +134,7 @@ scr_get_input();
 
 
 if (space_key) {
-text[0] = "Penny for your thoughts!";
+text[0] = "Penny for your thoughts, dollface?";
 text[1] = "Does that big guy seem familiar to you?";
 text[2] = "..........Not much of a talker huh? Well here ya go anyway.";
 text[3] = "All's I've got is quarters, so I hope that suits your fancy.";
