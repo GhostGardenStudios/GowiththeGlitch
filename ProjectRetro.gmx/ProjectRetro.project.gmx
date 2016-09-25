@@ -128,6 +128,7 @@
       <object>objects\obj_arcade2</object>
       <object>objects\obj_arcade3</object>
       <object>objects\obj_jukebox</object>
+      <object>objects\obj_coin1</object>
       <object>objects\obj_table1</object>
       <object>objects\obj_table2</object>
       <object>objects\obj_opensign</object>
@@ -141,7 +142,6 @@
       <object>objects\obj_bartender</object>
     </objects>
     <objects name="arcade 1">
-      <object>objects\obj_coin1</object>
       <object>objects\obj_bg1</object>
       <object>objects\obj_ladder1</object>
       <object>objects\obj_ladder2</object>
