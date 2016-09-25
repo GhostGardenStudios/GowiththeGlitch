@@ -80,6 +80,7 @@ if (space_key) {
     global.coin = global.coin+2;
     global.coin2 = global.coin2+2;
     instance_destroy();
+    audio_play_sound(snd_coin,1,false);
 }
     
 </string>

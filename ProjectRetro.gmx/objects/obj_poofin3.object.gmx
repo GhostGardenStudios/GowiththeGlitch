@@ -53,6 +53,7 @@ alarm[0] = 50;
             <string>// Go to next room
 
 room_goto(rm_arcade3);
+audio_stop_all();
 </string>
           </argument>
         </arguments>

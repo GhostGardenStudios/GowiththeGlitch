@@ -53,6 +53,7 @@ alarm[0] = 50;
             <string>// Go to next room
 
 room_goto(rm_diner);
+audio_play_sound(snd_vaporwave,1,true);
 </string>
           </argument>
         </arguments>
