@@ -25,9 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Set global coin variable
+            <string>// Set global coin variables
 
 global.coin = 0;
+
+global.coin1 = 0;
+
+global.coin2 = 0;
+
+global.coin3 = 0;
 </string>
           </argument>
         </arguments>

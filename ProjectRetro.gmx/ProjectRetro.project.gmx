@@ -17,6 +17,7 @@
       <sprite>sprites\spr_test</sprite>
       <sprite>sprites\spr_test2</sprite>
       <sprite>sprites\spr_dialog</sprite>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
     <sprites name="diner">
       <sprite>sprites\spr_coin</sprite>
@@ -78,6 +79,8 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_dialog</font>
+    <font>fonts\f_font1</font>
+    <font>fonts\f_font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -85,9 +88,17 @@
       <object>objects\obj_wall</object>
       <object>objects\obj_view</object>
       <object>objects\obj_dialog</object>
-      <object>objects\obj_poof1</object>
       <object>objects\obj_coinvar</object>
       <object>objects\spr_invisiblewall</object>
+      <object>objects\obj_door</object>
+      <objects name="transition effects">
+        <object>objects\obj_poofin1</object>
+        <object>objects\obj_poofin2</object>
+        <object>objects\obj_poofin3</object>
+        <object>objects\obj_poofout</object>
+        <object>objects\obj_milkpoof</object>
+      </objects>
+      <object>objects\obj_title</object>
     </objects>
     <objects name="diner">
       <object>objects\obj_arcade1</object>

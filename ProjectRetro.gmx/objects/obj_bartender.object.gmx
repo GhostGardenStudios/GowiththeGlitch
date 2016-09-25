@@ -79,7 +79,9 @@ depth = phy_position_y * -1;
             <kind>1</kind>
             <string>//Create milkshake
 
+instance_create(random(room_width), random(room_height), obj_milkpoof); //effect over milkshake
 instance_create(obj_player.x, obj_player.y, obj_milkshake);
+
     
     show_debug_message("alarm went off");
 </string>
@@ -131,7 +133,7 @@ text[2] = "From all that jingling in your pocket,"
 text[3] = "you sure can't count your change, son.";
 }
 
-else if (space_key &amp;&amp; global.coin == 6) {
+else if (space_key &amp;&amp; global.coin == 5) {
 /// 4th instance dialogue
 text[0] = "Finally you got what I've been askin for.";
 text[1] = "I'm tellin you, the shake machine was rusting back here.";
@@ -141,7 +143,7 @@ text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 // Set alarm to create milkshake
     if (!barTalked)
     {
-        alarm[0] = 400;
+        alarm[0] = 350;
         show_debug_message("alarm was set");
         barTalked = true;
     }
@@ -170,7 +172,7 @@ text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
   <PhysicsShapePoints>
     <point>-1,0</point>
     <point>32,0</point>
-    <point>32,80</point>
-    <point>-1,80</point>
+    <point>32,88</point>
+    <point>-1,88</point>
   </PhysicsShapePoints>
 </object>

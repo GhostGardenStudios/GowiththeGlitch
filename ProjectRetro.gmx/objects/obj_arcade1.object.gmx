@@ -54,8 +54,8 @@ depth = phy_position_y * -1;
 
 scr_get_input();
 
-if (space_key) {
-instance_create(random(room_width), random(room_height), obj_poof1);
+if (space_key &amp;&amp; global.coin1 == 0) {
+instance_create(random(room_width), random(room_height), obj_poofin1);
 }
 </string>
           </argument>

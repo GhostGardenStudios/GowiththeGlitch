@@ -48,6 +48,37 @@ depth = phy_position_y * -1;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Dialogue variables
+
+dialog = noone;
+dialog_page = 0;
+xoffset = -70;
+yoffset = -98;
+
+text[0] = "All our customers are super jazzed about our new millkshakes!";
+text[1] = "Only 75 cents! Nifty, huh?";
+text[2] = "Talk to the stud behind the bar if you're interested, darlin.";
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// frame rate
 image_speed = 0.05;
 </string>

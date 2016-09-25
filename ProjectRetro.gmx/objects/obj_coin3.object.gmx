@@ -73,14 +73,18 @@ image_speed = 0.15;
           <argument>
             <kind>1</kind>
             <string>// Pick up coin
+// NUTSHACK
 
 scr_get_input();
 
 if (space_key) {
     global.coin = global.coin+2;
+    global.coin3 = global.coin3+2;
     instance_destroy();
 }
-    
+
+
+
 </string>
           </argument>
         </arguments>

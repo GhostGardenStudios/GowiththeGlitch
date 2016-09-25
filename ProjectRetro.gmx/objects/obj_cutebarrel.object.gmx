@@ -101,7 +101,7 @@ image_speed = 0.05;
             <kind>1</kind>
             <string>//Create coin
 
-instance_create(obj_player.x, obj_player.y, obj_coin1);
+instance_create(obj_cutebarrel.x - 100, obj_cutebarrel.y, obj_coin1);
     
     show_debug_message("alarm went off");
 </string>
@@ -133,15 +133,14 @@ scr_get_input();
 
 if (space_key) {
 text[0] = "Penny for your thoughts?";
-text[1] = "d";
-text[2] = "...";
-text[3] = "Not much of a talker huh? Well here ya go anyway.";
-text[4] = "All's I've got is quarters, so I hope that suits your fancy.";
+text[1] = "Does that big guy seem familiar to you?";
+text[2] = "..........Not much of a talker huh? Well here ya go anyway.";
+text[3] = "All's I've got is quarters, so I hope that suits your fancy.";
 
 // Set alarm to create milkshake
     if (!barrelTalked)
     {
-        alarm[0] = 400;
+        alarm[0] = 280;
         show_debug_message("alarm was set");
         barrelTalked = true;
     }

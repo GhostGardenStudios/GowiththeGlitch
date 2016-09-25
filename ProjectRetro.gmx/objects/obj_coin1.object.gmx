@@ -78,6 +78,7 @@ scr_get_input();
 
 if (space_key) {
     global.coin = global.coin+1;
+    global.coin1 = global.coin1+1;
     instance_destroy();
 }
     
@@ -101,7 +102,7 @@ if (space_key) {
   <PhysicsShapePoints>
     <point>2,2</point>
     <point>22,2</point>
-    <point>22,22</point>
-    <point>2,22</point>
+    <point>22,24</point>
+    <point>2,24</point>
   </PhysicsShapePoints>
 </object>

@@ -58,8 +58,8 @@
     <instance objName="obj_wall" x="-480" y="-224" name="inst_F2B21531" locked="0" code="" scaleX="19.6129035949707" scaleY="38.1935501098633" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-96" y="640" name="inst_495CBC2D" locked="0" code="" scaleX="34" scaleY="17.5483875274658" colour="4294967295" rotation="0"/>
     <instance objName="obj_bartender" x="320" y="288" name="inst_E95F8FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coin1" x="512" y="352" name="inst_B540B44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coin1" x="512" y="352" name="inst_1C4C52FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="512" y="352" name="inst_B540B44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="512" y="352" name="inst_1C4C52FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coinvar" x="160" y="128" name="inst_F2B22937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="576" y="352" name="inst_519E5953" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="640" y="352" name="inst_C8CE5C75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
