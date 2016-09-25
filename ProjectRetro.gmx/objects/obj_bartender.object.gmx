@@ -140,13 +140,13 @@ else if (space_key &amp;&amp; (global.coin == 5) || (global.coin == 6)) {
 /// 4th instance dialogue
 text[0] = "Finally you got what I've been askin for.";
 text[1] = "I'm tellin you, the shake machine was rusting back here.";
-text[2] = "Took so long the milk went back into the cow.";
+text[2] = "Took so long the milk went back into the cow!";
 text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 
 // Set alarm to create milkshake
     if (!barTalked &amp;&amp; global.bartendertouch &gt; 0 &amp;&amp; space_key)
     {   {
-        alarm[0] = 350;
+        alarm[0] = 330;
         show_debug_message("alarm was set");
         barTalked = true;
     }   }

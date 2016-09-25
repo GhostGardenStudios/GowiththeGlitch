@@ -26,6 +26,9 @@
       <sprite>sprites\spr_arcade1</sprite>
       <sprite>sprites\spr_arcade2</sprite>
       <sprite>sprites\spr_arcade3</sprite>
+      <sprite>sprites\spr_brokenarcade1</sprite>
+      <sprite>sprites\spr_brokenarcade2</sprite>
+      <sprite>sprites\spr_brokenarcade3</sprite>
       <sprite>sprites\spr_opensign</sprite>
       <sprite>sprites\spr_waitress2</sprite>
       <sprite>sprites\spr_waitress1</sprite>
@@ -46,6 +49,7 @@
       <sprite>sprites\spr_barrel</sprite>
       <sprite>sprites\spr_harambe</sprite>
       <sprite>sprites\spr_score1</sprite>
+      <sprite>sprites\spr_door1</sprite>
     </sprites>
     <sprites name="arcade 2">
       <sprite>sprites\spr_bg2</sprite>
@@ -57,6 +61,7 @@
       <sprite>sprites\spr_ghost1</sprite>
       <sprite>sprites\spr_ghost2</sprite>
       <sprite>sprites\spr_score2</sprite>
+      <sprite>sprites\spr_door2</sprite>
     </sprites>
     <sprites name="arcade 3">
       <sprite>sprites\spr_bg3</sprite>
@@ -67,6 +72,10 @@
       <sprite>sprites\spr_sign</sprite>
       <sprite>sprites\spr_puddles</sprite>
       <sprite>sprites\spr_score3</sprite>
+      <sprite>sprites\spr_door3</sprite>
+    </sprites>
+    <sprites name="title and credits">
+      <sprite>sprites\spr_title</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -90,7 +99,6 @@
       <object>objects\obj_dialog</object>
       <object>objects\obj_coinvar</object>
       <object>objects\spr_invisiblewall</object>
-      <object>objects\obj_door</object>
       <objects name="transition effects">
         <object>objects\obj_poofin1</object>
         <object>objects\obj_poofin2</object>
@@ -127,6 +135,7 @@
       <object>objects\obj_barrel</object>
       <object>objects\obj_harambe</object>
       <object>objects\obj_score1</object>
+      <object>objects\obj_door1</object>
     </objects>
     <objects name="arcade 2">
       <object>objects\obj_coin2</object>
@@ -139,6 +148,7 @@
       <object>objects\obj_ghost1</object>
       <object>objects\obj_ghost2</object>
       <object>objects\obj_score2</object>
+      <object>objects\obj_door2</object>
     </objects>
     <objects name="arcade 3">
       <object>objects\obj_coin3</object>
@@ -150,6 +160,10 @@
       <object>objects\obj_sign</object>
       <object>objects\obj_puddles</object>
       <object>objects\obj_score3</object>
+      <object>objects\obj_door3</object>
+    </objects>
+    <objects name="title and credits">
+      <object>objects\obj_titleglitch</object>
     </objects>
     <object>objects\obj_parent</object>
   </objects>
