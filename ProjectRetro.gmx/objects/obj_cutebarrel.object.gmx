@@ -140,7 +140,7 @@ text[2] = "..........Not much of a talker huh? Well here ya go anyway.";
 text[3] = "All's I've got is quarters, so I hope that suits your fancy.";
 
 // Set alarm to create milkshake
-    if (!barrelTalked &amp;&amp; global.barreltouch &gt; 0) 
+    if (!barrelTalked &amp;&amp; global.barreltouch &gt; 0 &amp;&amp; space_key &amp;&amp; position_meeting(obj_player.x, obj_player.y, obj_cutebarrel)) 
     {
         alarm[0] = 280;
         show_debug_message("alarm was set");
