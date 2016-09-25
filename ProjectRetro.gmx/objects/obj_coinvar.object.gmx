@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// Set global coin variables
 
-global.coin = 6;
+global.coin = 0;
 
 global.coin1 = 0;
 
