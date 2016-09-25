@@ -3,7 +3,7 @@
   <spriteName>spr_bartender</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>605</depth>
   <persistent>0</persistent>
   <parentName>obj_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,7 +53,7 @@ barTalked = false;
           <argument>
             <kind>1</kind>
             <string>/// depth correction
-depth = phy_position_y * -1;
+// depth = phy_position_y * -1;
 
 </string>
           </argument>
@@ -144,12 +144,12 @@ text[2] = "Took so long the milk went back into the cow.";
 text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 
 // Set alarm to create milkshake
-    if (!barTalked &amp;&amp; global.bartendertouch &gt; 0)
-    {
+    if (!barTalked &amp;&amp; global.bartendertouch &gt; 0 &amp;&amp; space_key)
+    {   {
         alarm[0] = 350;
         show_debug_message("alarm was set");
         barTalked = true;
-    }
+    }   }
 }
 
 

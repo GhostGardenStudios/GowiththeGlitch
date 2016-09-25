@@ -3,7 +3,7 @@
   <spriteName>spr_bar</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>600</depth>
   <persistent>0</persistent>
   <parentName>obj_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// depth correction
-depth = phy_position_y * -1;
+// depth = phy_position_y * -1;
 
 </string>
           </argument>
