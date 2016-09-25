@@ -82,6 +82,9 @@ depth = phy_position_y * -1;
 instance_create(random(room_width), random(room_height), obj_milkpoof); //effect over milkshake
 instance_create(obj_bartender.x - 50, obj_bartender.y + 20, obj_milkshake);
 
+if (instance_exists(obj_milkshake)){
+    object_set_depth(obj_milkshake, -100);
+    }
     
     show_debug_message("alarm went off");
 </string>
@@ -118,14 +121,14 @@ text[1] = "Milkshakes are 75 cents, and I'm not seeing any money.";
 text[2] = "Gotta have some cold hard coins on ya.";
 }
 
-else if (space_key &amp;&amp; global.coin == 2) {
+else if (space_key &amp;&amp; (global.coin == 1) || global.coin == 2) {
 /// 2nd instance dialogue
 text[0] = "Boy! Want one of these sweet milkshakes, huh?";
 text[1] = "Seems you only have 25 cents! You need 75 cents!";
 text[2] = "Check back when you've got enough money, son.";
 }
 
-else if (space_key &amp;&amp; global.coin == 4) {
+else if (space_key &amp;&amp; (global.coin == 3) || (global.coin == 4)) {
 /// 3rd instance dialogue
 text[0] = "Cravin a milkshake, my boy? You're killin me, smalls!";
 text[1] = "You're at 50 cents. Only need a quarter more!";
@@ -133,7 +136,7 @@ text[2] = "From all that jingling in your pocket,"
 text[3] = "you sure can't count your change, son.";
 }
 
-else if (space_key &amp;&amp; global.coin == 5) {
+else if (space_key &amp;&amp; (global.coin == 5) || (global.coin == 6)) {
 /// 4th instance dialogue
 text[0] = "Finally you got what I've been askin for.";
 text[1] = "I'm tellin you, the shake machine was rusting back here.";
@@ -141,7 +144,7 @@ text[2] = "Took so long the milk went back into the cow.";
 text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 
 // Set alarm to create milkshake
-    if (!barTalked)
+    if (!barTalked &amp;&amp; global.bartendertouch &gt; 0)
     {
         alarm[0] = 350;
         show_debug_message("alarm was set");
@@ -152,6 +155,31 @@ text[3] = "Welp. Here ya go, son! Congrats, you earned it I guess.";
 
 
   
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Adds to global bartender touch variable
+
+global.bartendertouch = global.bartendertouch+2;
 </string>
           </argument>
         </arguments>
