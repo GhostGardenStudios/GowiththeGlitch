@@ -80,7 +80,7 @@ barTalked = false;
             <string>//Create milkshake
 
 instance_create(random(room_width), random(room_height), obj_milkpoof); //effect over milkshake
-instance_create(obj_bartender.x - 50, obj_bartender.y + 20, obj_milkshake);
+instance_create(obj_bartender.x + 40, obj_bartender.y + 20, obj_milkshake);
 
 if (instance_exists(obj_milkshake)){
     object_set_depth(obj_milkshake, -100);
