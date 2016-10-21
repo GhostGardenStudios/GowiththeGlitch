@@ -102,6 +102,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_dialog</font>
+    <font>fonts\ft_fsdialog</font>
     <font>fonts\f_font1</font>
     <font>fonts\f_font2</font>
   </fonts>

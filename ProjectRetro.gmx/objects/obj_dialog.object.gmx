@@ -62,10 +62,41 @@ text_count += spd;
 text_visible = string_copy(text[text_page], 0, text_count);
 var xx = (x-view_xview[0])*display_scale;
 var yy = (y-view_yview[0])*display_scale;
-draw_set_font(ft_dialog);
 draw_set_halign(fa_left);
 draw_set_colour(c_white);
 draw_text_ext(xx+margin, yy+margin, text_visible, -1, width-(margin*2));
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// fullscreen
+
+if window_get_fullscreen()
+   {
+    draw_set_font(ft_fsdialog);
+    show_debug_message("we fullscreen");
+   }
+else    {
+    draw_set_font(ft_dialog);
+    show_debug_message("we not");
+   }
 </string>
           </argument>
         </arguments>
