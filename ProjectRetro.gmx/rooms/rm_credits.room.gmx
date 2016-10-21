@@ -55,6 +55,7 @@ global.coin = true;</code>
   </views>
   <instances>
     <instance objName="obj_credits" x="481" y="271" name="inst_9A0D197E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_extra" x="85" y="110" name="inst_81506BB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

@@ -54,6 +54,7 @@
     <instance objName="obj_milkshakeget" x="125" y="325" name="inst_2C37CAE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigmilkshake" x="425" y="35" name="inst_A674A877" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_milkshakeleave" x="55" y="90" name="inst_20540439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_extra" x="140" y="195" name="inst_49336740" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

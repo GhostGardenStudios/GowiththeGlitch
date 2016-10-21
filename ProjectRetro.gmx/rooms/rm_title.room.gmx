@@ -55,6 +55,7 @@
     <instance objName="obj_coinvar" x="160" y="256" name="inst_E454F344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titleglitch" x="480" y="268" name="inst_E697B20F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vaporwavesong" x="75" y="475" name="inst_8E389F50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_extra" x="160" y="380" name="inst_4601F630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

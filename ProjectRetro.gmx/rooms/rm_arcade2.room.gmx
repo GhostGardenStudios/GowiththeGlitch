@@ -71,6 +71,7 @@
     <instance objName="obj_door2" x="556" y="230" name="inst_7E7D4A19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pacmansong" x="715" y="170" name="inst_A3D83F1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frame2" x="480" y="385" name="inst_DD370044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_extra" x="576" y="398" name="inst_A5BD8B2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

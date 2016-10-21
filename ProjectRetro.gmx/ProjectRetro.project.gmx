@@ -122,6 +122,7 @@
       </objects>
       <object>objects\obj_parent</object>
       <object>objects\obj_title</object>
+      <object>objects\obj_extra</object>
     </objects>
     <objects name="diner">
       <object>objects\obj_arcade1</object>
@@ -151,6 +152,7 @@
       <object>objects\obj_harambe</object>
       <object>objects\obj_score1</object>
       <object>objects\obj_door1</object>
+      <object>objects\obj_frame1</object>
     </objects>
     <objects name="arcade 2">
       <object>objects\obj_coin2</object>
@@ -164,6 +166,7 @@
       <object>objects\obj_ghost2</object>
       <object>objects\obj_score2</object>
       <object>objects\obj_door2</object>
+      <object>objects\obj_frame2</object>
     </objects>
     <objects name="arcade 3">
       <object>objects\obj_coin3</object>
@@ -176,6 +179,7 @@
       <object>objects\obj_puddles</object>
       <object>objects\obj_score3</object>
       <object>objects\obj_door3</object>
+      <object>objects\obj_frame3</object>
     </objects>
     <objects name="title and credits">
       <object>objects\obj_titleglitch</object>
@@ -192,9 +196,6 @@
       <object>objects\obj_milkshakeleave</object>
       <object>objects\obj_milkshakeget</object>
     </objects>
-    <object>objects\obj_frame1</object>
-    <object>objects\obj_frame2</object>
-    <object>objects\obj_frame3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
